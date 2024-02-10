@@ -27,6 +27,7 @@
 		BE14908E2B779FC8005DD63C /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BE1490812B779FC8005DD63C /* Roboto-Bold.ttf */; };
 		BE14908F2B779FC8005DD63C /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BE1490822B779FC8005DD63C /* Roboto-Thin.ttf */; };
 		BE1490902B779FC8005DD63C /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BE1490832B779FC8005DD63C /* Roboto-Black.ttf */; };
+		BEAC0BC52B77A589007EE242 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAC0BC42B77A589007EE242 /* AppColors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		BE1490812B779FC8005DD63C /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
 		BE1490822B779FC8005DD63C /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
 		BE1490832B779FC8005DD63C /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
+		BEAC0BC42B77A589007EE242 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 			children = (
 				BE1490712B779F00005DD63C /* Extensions */,
 				BE14904D2B777657005DD63C /* Fonts */,
+				BEAC0BC42B77A589007EE242 /* AppColors.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -227,6 +230,7 @@
 				BE14903B2B77586B005DD63C /* ViewController.swift in Sources */,
 				BE1490372B77586B005DD63C /* AppDelegate.swift in Sources */,
 				BE1490392B77586B005DD63C /* SceneDelegate.swift in Sources */,
+				BEAC0BC52B77A589007EE242 /* AppColors.swift in Sources */,
 				BE1490752B779F66005DD63C /* UIFont+Extension.swift in Sources */,
 				BE1490742B779F66005DD63C /* UIColor+Extension.swift in Sources */,
 			);
