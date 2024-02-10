@@ -13,7 +13,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         let label = UILabel()
-        label.text = "LabExpert"
+        label.text = "Explore checkups"
         label.translatesAutoresizingMaskIntoConstraints = false
         
         view.addSubview(label)
@@ -23,9 +23,10 @@ class ViewController: UIViewController {
             label.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 20),
             label.rightAnchor.constraint(equalTo: view.rightAnchor, constant: 20)])
         
-        label.font = .Roboto.thin.size(of: 20)
+        label.font = .workSans.regular.size(of: 22)
+        label.textColor = AppColors.darkText
         
-        view.backgroundColor = .green
+        view.backgroundColor = AppColors.background
     }
 
 

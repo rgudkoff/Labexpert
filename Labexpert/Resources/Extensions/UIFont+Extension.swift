@@ -69,11 +69,89 @@ extension UIFont {
                 return UIFont(name: Constants.Roboto.thinItalic, size: size)!
             }
         }
+        
+    }
+    enum workSans {
+        enum black {
+            static func size(of size: CGFloat) -> UIFont {
+                return UIFont(name: Constants.WorkSans.black, size: size)!
+            }
+        }
+        enum blackItalic {
+            static func size(of size: CGFloat) -> UIFont {
+                return UIFont(name: Constants.WorkSans.blackItalic, size: size)!
+            }
+        }
+        enum bold {
+            static func size(of size: CGFloat) -> UIFont {
+                return UIFont(name: Constants.WorkSans.bold, size: size)!
+            }
+        }
+        enum boldItalic {
+            static func size(of size: CGFloat) -> UIFont {
+                return UIFont(name: Constants.WorkSans.boldItalic, size: size)!
+            }
+        }
+        enum italic {
+            static func size(of size: CGFloat) -> UIFont {
+                return UIFont(name: Constants.WorkSans.italic, size: size)!
+            }
+        }
+        enum light {
+            static func size(of size: CGFloat) -> UIFont {
+                return UIFont(name: Constants.WorkSans.light, size: size)!
+            }
+        }
+        enum lightitalic {
+            static func size(of size: CGFloat) -> UIFont {
+                return UIFont(name: Constants.WorkSans.lightItalic, size: size)!
+            }
+        }
+        enum medium {
+            static func size(of size: CGFloat) -> UIFont {
+                return UIFont(name: Constants.WorkSans.medium, size: size)!
+            }
+        }
+        enum mediumItalic {
+            static func size(of size: CGFloat) -> UIFont {
+                return UIFont(name: Constants.WorkSans.mediumItalic, size: size)!
+            }
+        }
+        enum regular {
+            static func size(of size: CGFloat) -> UIFont {
+                return UIFont(name: Constants.WorkSans.regular, size: size)!
+            }
+        }
+        enum thin {
+            static func size(of size: CGFloat) -> UIFont {
+                return UIFont(name: Constants.WorkSans.thin, size: size)!
+            }
+        }
+        enum thinitalic {
+            static func size(of size: CGFloat) -> UIFont {
+                return UIFont(name: Constants.WorkSans.thinItalic, size: size)!
+            }
+        }
+        
     }
 }
 
 private extension UIFont {
     enum Constants {
+        enum WorkSans {
+            static let black = "WorkSans-Black"
+            static let blackItalic = "WorkSans-BlackItalic"
+            static let bold = "WorkSans-Bold"
+            static let boldItalic = "WorkSans-BoldItalic"
+            static let italic = "WorkSans-Italic"
+            static let light = "WorkSans-Light"
+            static let lightItalic = "WorkSans-LightItalic"
+            static let medium = "WorkSans-Medium"
+            static let mediumItalic = "WorkSans-MediumItalic"
+            static let regular = "WorkSans-Regular"
+            static let thin = "WorkSans-Thin"
+            static let thinItalic = "WorkSans-ThinItalic"
+        }
         enum Roboto {
             static let black = "Roboto-Black"
             static let blackItalic = "Roboto-BlackItalic"
