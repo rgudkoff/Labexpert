@@ -50,6 +50,7 @@
 		BEAC0C302B77ACC6007EE242 /* WorkSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BEAC0C1A2B77ACC6007EE242 /* WorkSans-LightItalic.ttf */; };
 		BEAC0C312B77ACC6007EE242 /* WorkSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BEAC0C1B2B77ACC6007EE242 /* WorkSans-ExtraBoldItalic.ttf */; };
 		BEAC0C322B77ACC6007EE242 /* WorkSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BEAC0C1C2B77ACC6007EE242 /* WorkSans-Bold.ttf */; };
+		BEAC0C372B77AE36007EE242 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAC0C362B77AE36007EE242 /* Coordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -98,6 +99,7 @@
 		BEAC0C1A2B77ACC6007EE242 /* WorkSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-LightItalic.ttf"; sourceTree = "<group>"; };
 		BEAC0C1B2B77ACC6007EE242 /* WorkSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
 		BEAC0C1C2B77ACC6007EE242 /* WorkSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-Bold.ttf"; sourceTree = "<group>"; };
+		BEAC0C362B77AE36007EE242 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 		BE1490352B77586B005DD63C /* Labexpert */ = {
 			isa = PBXGroup;
 			children = (
+				BEAC0C332B77ADCC007EE242 /* NavigationLayer */,
 				BE14904C2B777642005DD63C /* Resources */,
 				BE1490362B77586B005DD63C /* AppDelegate.swift */,
 				BE1490382B77586B005DD63C /* SceneDelegate.swift */,
@@ -216,6 +219,30 @@
 				BEAC0C1C2B77ACC6007EE242 /* WorkSans-Bold.ttf */,
 			);
 			path = WorkSans;
+			sourceTree = "<group>";
+		};
+		BEAC0C332B77ADCC007EE242 /* NavigationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				BEAC0C352B77AE07007EE242 /* Coordinators */,
+				BEAC0C342B77ADFE007EE242 /* Controllers */,
+			);
+			path = NavigationLayer;
+			sourceTree = "<group>";
+		};
+		BEAC0C342B77ADFE007EE242 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		BEAC0C352B77AE07007EE242 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				BEAC0C362B77AE36007EE242 /* Coordinator.swift */,
+			);
+			path = Coordinators;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,6 +356,7 @@
 				BEAC0BC52B77A589007EE242 /* AppColors.swift in Sources */,
 				BE1490752B779F66005DD63C /* UIFont+Extension.swift in Sources */,
 				BE1490742B779F66005DD63C /* UIColor+Extension.swift in Sources */,
+				BEAC0C372B77AE36007EE242 /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
