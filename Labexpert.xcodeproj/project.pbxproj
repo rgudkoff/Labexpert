@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		87365DA2129D2D9528DB3BD8 /* Pods_Labexpert.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24A0253F273CCB4F5F1230CF /* Pods_Labexpert.framework */; };
 		BE1490372B77586B005DD63C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1490362B77586B005DD63C /* AppDelegate.swift */; };
 		BE1490392B77586B005DD63C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1490382B77586B005DD63C /* SceneDelegate.swift */; };
 		BE14903B2B77586B005DD63C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE14903A2B77586B005DD63C /* ViewController.swift */; };
@@ -54,6 +55,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		182A53F8C5A00D0F445E4DA6 /* Pods-Labexpert.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Labexpert.release.xcconfig"; path = "Target Support Files/Pods-Labexpert/Pods-Labexpert.release.xcconfig"; sourceTree = "<group>"; };
+		24A0253F273CCB4F5F1230CF /* Pods_Labexpert.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Labexpert.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8118CD67AEEDF6D7BA96AECA /* Pods-Labexpert.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Labexpert.debug.xcconfig"; path = "Target Support Files/Pods-Labexpert/Pods-Labexpert.debug.xcconfig"; sourceTree = "<group>"; };
 		BE1490332B77586B005DD63C /* Labexpert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Labexpert.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE1490362B77586B005DD63C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE1490382B77586B005DD63C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -107,17 +111,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87365DA2129D2D9528DB3BD8 /* Pods_Labexpert.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2CB204F070FD2EF56EFC5EA8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				24A0253F273CCB4F5F1230CF /* Pods_Labexpert.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6C05BC88EBA936781AC8EC4D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8118CD67AEEDF6D7BA96AECA /* Pods-Labexpert.debug.xcconfig */,
+				182A53F8C5A00D0F445E4DA6 /* Pods-Labexpert.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		BE14902A2B77586B005DD63C = {
 			isa = PBXGroup;
 			children = (
 				BE1490352B77586B005DD63C /* Labexpert */,
 				BE1490342B77586B005DD63C /* Products */,
+				6C05BC88EBA936781AC8EC4D /* Pods */,
+				2CB204F070FD2EF56EFC5EA8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -252,6 +277,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BE1490472B77586D005DD63C /* Build configuration list for PBXNativeTarget "Labexpert" */;
 			buildPhases = (
+				C2BC282400BCD64912C8B7EC /* [CP] Check Pods Manifest.lock */,
 				BE14902F2B77586B005DD63C /* Sources */,
 				BE1490302B77586B005DD63C /* Frameworks */,
 				BE1490312B77586B005DD63C /* Resources */,
@@ -344,6 +370,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C2BC282400BCD64912C8B7EC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Labexpert-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BE14902F2B77586B005DD63C /* Sources */ = {
@@ -495,6 +546,7 @@
 		};
 		BE1490482B77586D005DD63C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8118CD67AEEDF6D7BA96AECA /* Pods-Labexpert.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -522,6 +574,7 @@
 		};
 		BE1490492B77586D005DD63C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 182A53F8C5A00D0F445E4DA6 /* Pods-Labexpert.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
